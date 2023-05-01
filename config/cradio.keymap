@@ -64,7 +64,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &mt NUM TAB &mt NAV SPACE &mt SYM RET &kp RET
+                                           &mt NUM TAB &mt NAV SPACE &mt SYM RET &kp BSCP
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
