@@ -92,7 +92,7 @@
             &kp EXCL   &kp CARET  &kp PRCNT  &kp DLLR  &kp PLUS       &trans    &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    ~     │   #      │   @      │    !     │   \      │   │          │          │          │          │          │
-            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSHL       &trans    &trans    &trans     &trans     &trans
+            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSLH       &trans    &trans    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
