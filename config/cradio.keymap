@@ -38,7 +38,7 @@
         };
         combo_capsword {
             key-positions = <20 29>;
-            bindings = <&caps_word;
+                bindings = <&caps_word>;
         };
     };
     conditional_layers {
