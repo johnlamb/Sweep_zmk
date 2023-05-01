@@ -69,10 +69,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &reset     &trans     &trans     &trans    &bt BT_SEL 0   &trans     &kp N7     &kp N8     &kp N9      &trans
+            &sys_reset &trans     &trans     &trans    &bt BT_SEL 0   &trans     &kp N7     &kp N8     &kp N9      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-          &BOOTLOADER  &trans     &trans     &trans    &bt BT_SEL 1   &trans     &kp N4     &kp N5     &kp N6      &kp COMMA
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1   &trans     &kp N4     &kp N5     &kp N6      &kp COMMA
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2   &kp N0     &kp N1     &kp N2     &kp N3      &kp DOT
