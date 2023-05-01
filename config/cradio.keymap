@@ -41,13 +41,6 @@
                 bindings = <&caps_word>;
         };
     };
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -90,10 +83,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │   *      │    &     │          │   │          │          │          │          │          │
-            &trans     &trans    &kp LBRC   &kp RBRC   &trans         &trans    &trans     &trans     &trans     &trans    
+            &trans     &trans    &kp STAR   &kp AMPS   &trans         &trans    &trans     &trans     &trans     &trans    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    "     │   ^      │    %     │    $     │  +       │   │          │          │          │          │          │
-            &kp EXCL   &kp CARET  &kp PRCNT  &kp DLLR  &kp PLUS       &trans    &trans     &trans     &trans     &trans
+            &kp SQT   &kp CARET  &kp PRCNT  &kp DLLR  &kp EQUAL       &trans    &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    ~     │   #      │   @      │    !     │   \      │   │          │          │          │          │          │
             &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSLH       &trans    &trans     &trans     &trans     &trans
@@ -110,7 +103,7 @@
             &trans    &trans     &trans     &trans     &trans         &trans     &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
-            &trans    &trans     &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
+            &trans    &trans     &trans     &trans     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │    [     │    ]     │   >      │   <      │
             &trans    &trans     &trans     &trans     &trans         &trans     &kp LBKT   &kp RBKT   &kp GT     &kp LT
