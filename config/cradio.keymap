@@ -54,8 +54,8 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp A      &kp S     &ht LALT D &ht LGUI F   &kp G          &kp H    &ht RGUI J &ht RALT K  &kp L      &kp SQT
-        //  HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+            &kp A      &kp S     &ht LALT D &ht LGUI F   &kp G          &kp H    &ht RGUI J &ht RALT K  &kp L      &kp SEMI
+        //  HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        ;)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -91,8 +91,8 @@
         //│    "     │   ^      │    %     │    $     │  +       │   │          │          │          │          │          │
             &kp EXCL   &kp CARET  &kp PRCNT  &kp DLLR  &kp PLUS       &trans    &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    ~     │   #      │   @      │    !     │   |      │   │          │          │          │          │          │
-            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp PIPE       &trans    &trans    &trans     &trans     &trans
+        //│    ~     │   #      │   @      │    !     │   \      │   │          │          │          │          │          │
+            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSHL       &trans    &trans    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
