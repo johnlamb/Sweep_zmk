@@ -36,6 +36,10 @@
             key-positions = <23 26>;
             bindings = <&kp UNDER>;
         };
+        combo_capsword {
+            key-positions = <20 29>;
+            bindings = <&caps_word;
+        };
     };
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -53,14 +57,14 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp A      &kp S     &ht LALT D &ht LGUI F   &kp G          &kp H    &ht RGUI J &ht RALT K  &kp L      &kp SEMI
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │   ;      │
+           &ht LALT A &ht LCTRL S &ht LGUI D &ht LSHFT F &kp G         &kp H    &ht RSHFT J &ht RGUI K &ht RCTRL L &ht RALT SEMI
         //  HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        ;)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt NAV TAB &mt LSHFT SPACE &mt RCTRL BSPC &lt SYM RET
+                                           &mt NUM TAB &mt NAV SPACE &mt SYM RET &kp RET
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -92,7 +96,7 @@
             &kp EXCL   &kp CARET  &kp PRCNT  &kp DLLR  &kp PLUS       &trans    &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    ~     │   #      │   @      │    !     │   \      │   │          │          │          │          │          │
-            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSLH       &trans    &trans    &trans     &trans     &trans
+            &kp TILDE  &kp HASH   &kp AT     &kp EXCL  &kp BSLH       &trans    &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
