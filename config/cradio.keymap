@@ -7,7 +7,10 @@
 
 #define NUM 1
 #define SYM 2
-#define NAV 3
+
+// Home row mods macro
+#define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LCTRL k2  &ht LGUI k3  &ht LSHFT k4
+#define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RCTRL k3  &ht RALT k4
 
 / {
     behaviors { 
@@ -18,14 +21,14 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
-            global-quick-tap;
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
     };
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            key-positions = <10 19>;
+            key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
     };
@@ -47,7 +50,7 @@
             &kp Q      &kp W      &kp E      &kp R       &kp T         &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │   ;      │
-           &ht LALT A &ht LCTRL S &ht LGUI D &ht LSHFT F &kp G         &kp H    &ht RSHFT J &ht RGUI K &ht RCTRL L &ht RALT SEMI
+           HRML(A,         S,         D,         F)      &kp G         &kp H      HRMR(J,        K,         L,       ;)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V       &kp B         &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
